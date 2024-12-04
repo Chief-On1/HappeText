@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <title>Contact | HappeText</title>
+   <!-- Icons -->
+    <link rel="icon" href="img/favicon.webp" type="image/x-icon">
+   <link rel="stylesheet" href="styles/styles.css">
+   <link rel="stylesheet" href="styles/general.css">
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+   <div id="loader" class="loader-wrapper">
+     <div class="loader"></div>
+   </div>
+   <main>
+      <div class="container">
+      <section id="contact-us">
+         <h2>Contact us</h2>
+         <div class="feedback-div" id="feedback-div"></div>
+         <div class="form-box">
+            
+    <form method="POST" id="contactForm" autocomplete="on">
+    <div class="input-group">
+       <div class="input-field">
+        <label for="cName">Your Name:</label>
+        <input autofocus type="text" id="cName" placeholder="Enter Your Full Name..." autocomplete="name" name="uName" minlength="5" maxlength="20" required/>
+    </div>
+    <div class="confirmPotField">
+       <label for="confirmPot2">Leave it blank:</label>
+       <input type="text" name="pot" id="confirmPot2" autocomplete="off" aria-hidden="true"/>
+    </div>
+    <div class="input-field">
+        <label for="cEmail">Your Email:</label>
+        <input type="email" id="cEmail" placeholder="Enter Your Email Address..." autocomplete="email" name="uEmail" required/>
+    </div></div>
+    <div class="input-field">
+        <label for="textMessage">Message:</label>
+           <div class="div">
+              <textarea id="textMessage" placeholder="Enter your message here..." required name="messageBody" minlength="20" maxlength="200"></textarea>
+           <span id="charCount" class="charCount">0/200</span>
+           </div>
+    </div>
+    <button type="submit">Submit</button>
+    <div id="errorMessage"></div>
+</form>
+</div>
+      </section>
+      
+      <!-- Noscript -->
+      <noscript>
+         <header>
+           <h1>HappeText</h1>
+         </header>
+        
+        <div class="intro">
+           <h3>🎄 Welcome to HappeText Christmas wishes!</h3>        
+        </div>
+        
+           <div class="js-disabled-notice">
+              <h4 id="head">JavaScript disabled!</h4>
+              <p><b>Hmmm!😔, You have JavaScript disabled on your browser, please enable it and refresh the page to view this contents properly.</b> Or if your browser does not support JavaScript, please open it on a different browser!</p>
+              
+        </noscript>
+      </div>
+    </main>
+      
+      <!-- Footer -->
+    <footer id="footer" class="footer">
+       <div class="site-name">HappeText</div>
+       <nav>
+          <ul>
+             <li id="home" aria-label="Navigate to homepage">Home</li>
+             <li>
+                <button type="button" class="support" aria-label="Support me by buying me a coffee">Buy me a coffee ☕</button>
+             </li>
+          </ul>
+       </nav>
+       <hr>
+       <p id="copyright">&copy; <span id="year"></span> - HappeText.
+       From <span>Diva Techs Community</span></p>
+    </footer>
+    
+    
+    <script src="script/general.js" defer></script>
+    <script src="script/charCout.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- 04/12/2024 - 05:00GMT -->
+</body>
+</html>
